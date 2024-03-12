@@ -1,0 +1,17 @@
+.banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 50%;
+    width: 100%;
+    background-size: cover ;
+    background-position: 10%;
+    
+}
+
+.banner img{
+display: flex;
+flex-direction: row;
+height: 50%;
+width: 100%;
+}
