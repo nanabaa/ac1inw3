@@ -67,7 +67,21 @@ const HabilidadesIntro = () => {
 }
 HabilidadesIntro();
 
+const Contato = () => {
+    let div = document.createElement("div");
+    div.setAttribute('class', 'contato');
+    
+    var textoBanner = document.createElement("h1");
+    textoBanner.innerText = 'CONTATO';
 
+    div.appendChild(textoBanner);
+    body.append(div);
+
+    div.style.display = 'flex';
+    div.style.alignItems = 'center';
+    div.style.justifyContent = 'center';
+}
+Contato();
 
 const Footer = () => {
     let div = document.createElement("div");
