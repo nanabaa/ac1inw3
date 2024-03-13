@@ -172,8 +172,70 @@ width: 100%;
     color: #480000;
 }
 
+.divDireita-1 {
+    display: flex;
+}
+
 .divDireita-2 {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row-reverse;
     margin-right: 15%;
+}
+
+.divDireita-3 {
+    display: flex;
+}
+
+#titulo-1 {
+    font-size: 150%;
+    color: #998f52;
+    text-align: center;
+    margin-left: 2%;
+    margin-top: 7%;
+    margin-right: 100%;
+}
+
+#titulo-2 {
+    font-size: 150%;
+    color: #998f52;
+    text-align: center;
+    margin-right: 2%;
+    margin-top: 7%;
+    margin-left: 90%;
+}
+
+#titulo-3 {
+    font-size: 150%;
+    color: #998f52;
+    text-align: center;
+    margin-left: 2%;
+    margin-top: 7%;
+    margin-right: 100%;
+}
+
+#paragrafo-1 {
+  font-size: 120%;
+    font-family: 'Lora';
+    color: #480000;
+    text-align:left;
+    margin-left: 2%;
+    margin-right: 50%;
+}
+
+#paragrafo-2 {
+  font-size: 120%;
+    font-family: 'Lora';
+    color: #480000;
+    text-align: right;
+    margin-right: 2%;
+    margin-left: 50%;
+}
+
+#paragrafo-3 {
+  font-size: 120%;
+    font-family: 'Lora';
+    color: #480000;
+    text-align:left;
+    margin-left: 2%;
+    margin-right: 50%;
 }
