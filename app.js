@@ -123,6 +123,36 @@ const HabilidadesIntro = () => {
 }
 HabilidadesIntro();
 
+const cardsContainer2 = () => {
+
+  let cardsContainer2 = document.createElement("div");
+  cardsContainer2.setAttribute('class', 'cardsContainer2');
+
+
+for (let i = 0; i < 2; i++) {
+
+  let card = document.createElement("div");
+  card.setAttribute('id', `cardP-${i+1}`)
+  cardsContainer2.appendChild(card);
+  }
+  body.append(cardsContainer2);
+  
+
+  
+}
+cardsContainer2();
+
+const links = () => {
+const link1 = document.getElementById ('cardP-1');
+const link2 = document.getElementById('cardP-2');
+
+
+link2.setAttribute("onclick", "location.href='https://viudess.github.io/psymosaic/'")
+link1.setAttribute("onclick", "location.href='https://laurakalybatas.github.io/ArteEmMov/'")
+}
+links();
+
+
 
 
 const Contato = () => {

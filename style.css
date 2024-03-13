@@ -191,7 +191,7 @@ width: 100%;
     color: #998f52;
     text-align: center;
     margin-left: 2%;
-    margin-top: 7%;
+    margin-top: 6%;
     margin-right: 100%;
 }
 
@@ -200,7 +200,7 @@ width: 100%;
     color: #998f52;
     text-align: center;
     margin-right: 2%;
-    margin-top: 7%;
+    margin-top: 6%;
     margin-left: 90%;
 }
 
@@ -209,7 +209,7 @@ width: 100%;
     color: #998f52;
     text-align: center;
     margin-left: 2%;
-    margin-top: 7%;
+    margin-top: 6%;
     margin-right: 100%;
 }
 
@@ -220,6 +220,7 @@ width: 100%;
     text-align:left;
     margin-left: 2%;
     margin-right: 50%;
+    margin-top: 1%;
 }
 
 #paragrafo-2 {
@@ -229,6 +230,7 @@ width: 100%;
     text-align: right;
     margin-right: 2%;
     margin-left: 50%;
+    margin-top: 1%;
 }
 
 #paragrafo-3 {
@@ -238,4 +240,34 @@ width: 100%;
     text-align:left;
     margin-left: 2%;
     margin-right: 50%;
+    margin-top: 1%;
+}
+
+.cardsContainer2{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    justify-content: space-around;
+
+}
+
+#cardP-1{
+ background-image: url(img/projeto1.jpg);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: 80%;
+ background-color: #2e2e2e;
+ width:330px;
+ height:330px;
+ border-radius:25px;
+}
+
+#cardP-2{
+    background-image: url(img/projeto2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:330px;
+    height:330px;
+    border-radius:25px;
 }
