@@ -37,29 +37,29 @@ Equipe();
 
 function cards() {
 
-    const nomesIntegrantes = ['Ana', 'Laura', 'Yannie'];
-
     let divAreaCards = document.createElement("div");
-    divAreaCards.setAttribute('class', 'areaCards');
-    divAreaCards.innerText = 'Integrantes (hover)';
+    divAreaCards.setAttribute('class', 'areaCards');    
     body.append(divAreaCards);
+    
+
 
     let divCards = document.createElement("div");
     divCards.setAttribute('class', 'cardsContainer');
 
     body.append(divCards);
 
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 6; i++) {
+        let divDireita= document.createElement("div");
+        divDireita.setAttribute('class', `div divDireita-${i+1}`)
         let card = document.createElement("div");
-        card.setAttribute('class', `card card-${i+1}`);
-        card.innerText = nomesIntegrantes[i];
-        divCards.append(card);
+        card.setAttribute('class', `card card-${i+1}`)
+        divCards.append(divDireita);
+        divDireita.appendChild(card)
     }
 
     
 }
-
-    cards();
+cards();
 
 const Habilidades = () => {
     let div = document.createElement("div");
@@ -92,6 +92,8 @@ const HabilidadesIntro = () => {
     div.style.justifyContent = 'flex-start';
 }
 HabilidadesIntro();
+
+
 
 const Contato = () => {
     let div = document.createElement("div");
@@ -169,6 +171,7 @@ const form = () => {
     const messageLabel = document.createElement('label');
     messageLabel.textContent = 'Mensagem:';
     messageLabel.style.display = 'block';
+
   
   
     const messageTextarea = document.createElement('textarea');
