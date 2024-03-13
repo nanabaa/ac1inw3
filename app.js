@@ -83,6 +83,129 @@ const Contato = () => {
 }
 Contato();
 
+const form = () => {
+          
+    const div = document.createElement("div");
+    div.setAttribute('class', 'contact');
+  
+    
+    div.style.display = 'flex';
+    div.style.alignItems = 'center';
+    div.style.justifyContent = 'center';
+  
+    
+    document.body.appendChild(div);
+  
+   
+    const form = document.createElement('form');
+    form.id = 'contactForm';
+    form.style.maxWidth = '600px';
+    form.style.margin = '20px auto';
+    form.style.fontFamily = 'Arial, sans-serif';
+  
+    
+    function createField(labelText, inputType, inputName, isRequired) {
+      const div = document.createElement('div');
+      div.style.marginBottom = '5%';
+  
+      const label = document.createElement('label');
+      label.textContent = labelText;
+      label.style.display = 'block';
+
+     
+  
+      const input = document.createElement('input');
+      input.type = inputType;
+      input.name = inputName;
+      input.required = isRequired;
+      input.style.width = '100%';
+      input.style.padding = '8px';
+      input.style.boxSizing = 'border-box';
+      input.style.border = '1px solid #ccc';
+      input.style.borderRadius = '4px';
+      input.placeholder = 'Digite aqui...';
+  
+      div.appendChild(label);
+      div.appendChild(input);
+  
+      return div;
+    }
+  
+    
+    const nameField = createField('Nome:', 'text', 'name', true);
+    const emailField = createField('Email:', 'email', 'email', true);
+  
+    const messageDiv = document.createElement('div');
+    messageDiv.style.marginBottom = '10px';
+  
+    const messageLabel = document.createElement('label');
+    messageLabel.textContent = 'Mensagem:';
+    messageLabel.style.display = 'block';
+  
+  
+    const messageTextarea = document.createElement('textarea');
+    messageTextarea.name = 'message';
+    messageTextarea.rows = '4';
+    messageTextarea.required = true;
+    messageTextarea.style.width = '100%';
+    messageTextarea.style.padding = '8px';
+    messageTextarea.style.boxSizing = 'border-box';
+    messageTextarea.style.border = '1px solid #ccc';
+    messageTextarea.style.borderRadius = '4px';
+    messageTextarea.placeholder = 'Digite sua mensagem aqui...';
+  
+    messageDiv.appendChild(messageLabel);
+    messageDiv.appendChild(messageTextarea);
+  
+    form.appendChild(nameField);
+    form.appendChild(emailField);
+    form.appendChild(messageDiv);
+  
+  
+    const submitButton = document.createElement('button');
+    submitButton.type = 'submit';
+    submitButton.textContent = 'Enviar';
+    submitButton.style.width = '100%';
+    submitButton.style.padding = '10px';
+    submitButton.style.backgroundColor = '#998f52';
+    submitButton.style.border = 'none';
+    submitButton.style.color = 'white';
+    submitButton.style.borderRadius = '4px';
+    submitButton.style.cursor = 'pointer';
+  
+   
+    submitButton.addEventListener('mouseover', function() {
+      submitButton.style.backgroundColor = '#c6b96e';
+    });
+  
+    submitButton.addEventListener('mouseout', function() {
+      submitButton.style.backgroundColor = '#998f52';
+    });
+  
+    form.appendChild(submitButton);
+  
+    
+    document.body.appendChild(form);
+  
+    // Adicionando evento de envio do formulário
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+  
+      const name = form.elements['name'].value;
+      const email = form.elements['email'].value;
+      const message = form.elements['message'].value;
+  
+      setTimeout(function() {
+        alert('Obrigado por entrar em contato, ' + name + '! Nós responderemos em breve, no email: ' + email);
+        form.reset();
+      }, 1000);
+    });
+  }
+  
+  
+  form();
+
+
 const Footer = () => {
     let div = document.createElement("div");
     div.setAttribute('class', 'footer');
