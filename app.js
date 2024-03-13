@@ -35,6 +35,32 @@ const Equipe = () => {
 }
 Equipe();
 
+function cards() {
+
+    const nomesIntegrantes = ['Ana', 'Laura', 'Yannie'];
+
+    let divAreaCards = document.createElement("div");
+    divAreaCards.setAttribute('class', 'areaCards');
+    divAreaCards.innerText = 'Integrantes (hover)';
+    body.append(divAreaCards);
+
+    let divCards = document.createElement("div");
+    divCards.setAttribute('class', 'cardsContainer');
+
+    body.append(divCards);
+
+    for (let i = 0; i < 3; i++) {
+        let card = document.createElement("div");
+        card.setAttribute('class', `card card-${i+1}`);
+        card.innerText = nomesIntegrantes[i];
+        divCards.append(card);
+    }
+
+    
+}
+
+    cards();
+
 const Habilidades = () => {
     let div = document.createElement("div");
     div.setAttribute('class', 'habilidades');
@@ -99,13 +125,15 @@ const form = () => {
    
     const form = document.createElement('form');
     form.id = 'contactForm';
-    form.style.maxWidth = '600px';
+    form.style.maxWidth = '700px';
     form.style.margin = '20px auto';
-    form.style.fontFamily = 'Arial, sans-serif';
+
   
     
     function createField(labelText, inputType, inputName, isRequired) {
+
       const div = document.createElement('div');
+      div.setAttribute('class','input');
       div.style.marginBottom = '5%';
   
       const label = document.createElement('label');

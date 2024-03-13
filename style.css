@@ -89,7 +89,7 @@ width: 100%;
 .contact{
     display: flex;
     flex-direction: row;
-    padding-bottom: 5%;
+    padding-bottom: 3%;
 }
 
 .contact h1{
@@ -97,3 +97,4 @@ width: 100%;
     color: black;
     font-family: 'Lora';
 }
+
