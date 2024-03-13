@@ -48,6 +48,7 @@ width: 100%;
     flex-direction: column;
     gap: 2rem;
     margin: 2rem;
+    margin-left: 15%;
   }
   
   .card-1{
@@ -174,4 +175,5 @@ width: 100%;
 .divDireita-2 {
     display: flex;
     justify-content: flex-end;
+    margin-right: 15%;
 }
